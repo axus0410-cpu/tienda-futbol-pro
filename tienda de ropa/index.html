@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutbolShop | Performance & Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">FUTBOL<span>SHOP</span></div>
+        <div class="cart-btn" id="open-cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>DOMINA LA CANCHA</h1>
+            <p>Nueva colección de jerseys 2026 disponible ahora.</p>
+            <a href="#productos" class="btn-hero">COMPRAR AHORA</a>
+        </div>
+    </header>
+
+    <section class="shipping-banner">
+        <div class="shipping-item">
+            <i class="fas fa-truck"></i>
+            <span>ENVÍOS A NIVEL NACIONAL</span>
+        </div>
+        <div class="shipping-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>PAGO 100% SEGURO</span>
+        </div>
+        <div class="shipping-item">
+            <i class="fas fa-sync"></i>
+            <span>DEVOLUCIONES GRATIS</span>
+        </div>
+    </section>
+
+    <main class="container" id="productos">
+        <h2 class="section-title">LOS MÁS BUSCADOS</h2>
+        <div id="product-grid" class="grid">
+            </div>
+    </main>
+
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">LO ÚLTIMO: ESPAÑA, INGLATERRA, FRANCIA, ALEMANIA E ITALIA</h2>
+            <div id="news-grid" class="news-grid">
+                <p style="text-align: center; grid-column: 1/-1;">Cargando noticias de última hora...</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-drawer" class="drawer">
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <h2>TU BOLSA</h2>
+                <span id="close-cart" class="close-x">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-body">
+                </div>
+            <div class="drawer-footer">
+                <div class="total-row">
+                    <span>Subtotal Estimado</span>
+                    <span id="cart-total">$0</span>
+                </div>
+                <p class="shipping-msg">Los costos de envío se calculan en el checkout.</p>
+                <button class="btn-pay">PAGAR AHORA</button>
+                <button class="btn-view-cart" id="close-cart-secondary">CONTINUAR COMPRANDO</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="#">Estado del pedido</a></li>
+                    <li><a href="#">Envíos y entregas</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Opciones de pago</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>ÚNETE AL CLUB</h4>
+                <p>Recibe noticias y promociones exclusivas.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <button type="button">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="bottom-content">
+                <p>&copy; 2026 FutbolShop, Inc. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Términos de uso</a>
+                    <a href="#">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
